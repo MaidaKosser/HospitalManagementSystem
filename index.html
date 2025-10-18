@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <title>HealthCenter Hospital</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#header-links" data-bs-offset="100" tabindex="0">
+  <header id="mainHeader">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <!-- For logo -->
+        <a class="navbar-brand" href="#home">
+          <img src="https://cdn-icons-png.flaticon.com/512/2966/2966327.png" alt="Hospital Logo">
+          HealthCenter
+        </a>
+        <!-- Hamburger Icon-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-links">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Header menu -->
+        <div class="collapse navbar-collapse" id="header-links">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#doctors" data-bs-toggle="dropdown">Doctors</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#doctors">Cardiology</a></li>
+                <li><a class="dropdown-item" href="#doctors">Neurology</a></li>
+                <li><a class="dropdown-item" href="#doctors">Orthopedic</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#services" data-bs-toggle="dropdown">Departments</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#services">Emergency</a></li>
+                <li><a class="dropdown-item" href="#services">Surgery</a></li>
+                <li><a class="dropdown-item" href="#radiology">Radiology</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#patients">Patients</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="d-none d-lg-block ms-3">
+            <a href="#appointments" class="btn btn-appointment" type="button" class="btn btn-appointment btn-lg px-5 py-3" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Banner -->
+  <section id="banner" class="banner d-flex align-items-center justify-content-center text-white text-center">
+    <div class="banner-overlay"></div>
+    <div class="container position-relative" data-aos="fade-up">
+      <h1 class="display-4 fw-bold mb-3">Welcome to HealthCenter Hospital</h1>
+      <p class="lead mb-3">Your Health, Our Priority</p>
+      <p class="mb-4">Providing world-class medical Center with compassion and expertise.</p>
+      <a href="#appointments" class="btn btn-primary btn-lg rounded-pill shadow" type="button" class="btn btn-appointment btn-lg px-5 py-3" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
+    </div>
+  </section>
+  <!-- Home -->
+  <section id="home" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+          <h2 class="fw-bold" id="home-h2">About HealthCenter Hospital</h2>
+          <p>HealthCenter Hospital is dedicated to providing exceptional health related services to our community. Our team of experienced medical professionals is committed to delivering personalized care tailored to each patient's needs.</p>
+          <p>With state-of-the-art facilities and a patient-centered approach, we strive to ensure the best outcomes for our patients.</p>
+        </div>
+        <div class="col-md-6 text-center" data-aos="fade-left">
+          <img src="https://cdn-icons-png.flaticon.com/512/2966/2966327.png" alt="Hospital Image"  class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Doctors Section -->
+  <section id="doctors" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Our Doctors</h2>
+
+      <div class="row g-4">
+        <!-- Doctor 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0 shadow-lg">
+            <img src="assets/images/image1.jpg" class="card-img-top rounded-circle mx-auto mt-3" 
+                 style="width:150px; height:150px; object-fit:cover;" alt="Dr. Ali Shehzad">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Dr. Ali Shehzad</h5>
+              <p class="card-text text-muted">Cardiology</p>
+              <p class="card-text small">Expert in heart care, cardiothoracic procedures, and patient-centered treatment of 10+ years. And Patients trust him for their heart health.  </p>
+              <a href="#doctors" class="btn btn-doctor btn-sm px-4 py-2">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <!-- Doctor 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0 shadow-lg">
+            <img src="assets/images/image2.jpg" class="card-img-top rounded-circle mx-auto mt-3" 
+                 style="width:150px; height:150px; object-fit:cover;" alt="Dr. Maria Awan">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Dr. Maria Awan</h5>
+              <p class="card-text text-muted">Neurology</p>
+              <p class="card-text small">Advanced treatment for neurological disorders and patient-centered care. Also 15+ years specializes in cognitive rehabilitation.</p>
+              <a href="#doctors" class="btn btn-doctor btn-sm px-4 py-2">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <!-- Doctor 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0 shadow-lg">
+            <img src="assets/images/image3.jpg" class="card-img-top rounded-circle mx-auto mt-3" 
+                 style="width:150px; height:150px; object-fit:cover;" alt="Dr. Faizan Tariq">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Dr. Faizan Tariq</h5>
+              <p class="card-text text-muted">Orthopedic</p>
+              <p class="card-text small">Expert orthopedic services of about 5+ years for bones, joints, and muscle injuries. He treat sports injuries, fractures, and chronic pain.</p>
+              <a href="#doctors" class="btn btn-doctor btn-sm px-4 py-2">See Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- Toast Container -->
+  <div class="position-fixed top-0 end-0 p-3" style="z-index: 1080; margin-top: 90px;"> <!-- moved 60px down -->
+    <div id="apptToast" class="toast align-items-center bg-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="toastBody" style="color: var(--text-primary);"> <!-- text color -->
+          Appointment Booked!
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal-->
+  <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 rounded shadow-sm">
+        <div class="modal-header border-0 position-relative justify-content-center">
+          <h5 class="modal-title fw-bold text-center" id="appointmentModalLabel" style="color: var(--text-primary);">
+            Book Appointment
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="appointmentForm">
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold" style="color: var(--text-primary);">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold" style="color: var(--text-primary);">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="email@gmail.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label fw-semibold" style="color: var(--text-primary);">Phone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="+92-300-4567890" required>
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label fw-semibold" style="color: var(--text-primary);">Date</label>
+              <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="mb-4">
+              <label for="department" class="form-label fw-semibold" style="color: var(--text-primary);">Department</label>
+              <select class="form-select" id="department" required>
+                <option selected>Choose...</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="neurology">Neurology</option>
+                <option value="orthopedic">Orthopedic</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-appointment w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Patients -->
+  <section id="patients" class="py-5" style="background: #f8f9fa;">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-5 fw-bold" style="color:var(--secondary)">Our Patients</h2>
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Patient ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Department</th>
+              <th>Admission Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="table-row">
+            <tr>
+              <td>0156891</td>
+              <td>Isha Malik</td>
+              <td>45</td>
+              <td>Cardiology</td>
+              <td>2025-10-01</td>
+              <td><span class="badge status-badge">Recovered</span></td>
+            </tr>
+            <tr data-aos="fade-up" data-aos-delay="100">
+              <td>0156892</td>
+              <td>Farhat Ijaz</td>
+              <td>32</td>
+              <td>Neurology</td>
+              <td>2025-10-05</td>
+              <td><span class="badge status-badge">Under Treatment</span></td>
+            </tr>
+            <tr data-aos="fade-up" data-aos-delay="200">
+              <td>0156893</td>
+              <td>Azlan Amir</td>
+              <td>29</td>
+              <td>Orthopedic</td>
+              <td>2025-10-07</td>
+              <td><span class="badge status-badge">Critical</span></td>
+            </tr>
+            <tr data-aos="fade-up" data-aos-delay="300">
+              <td>0156894</td>
+              <td>Samaira Lodhi</td>
+              <td>38</td>
+              <td>Neurology</td>
+              <td>2025-10-09</td>
+              <td><span class="badge status-badge">Recovered</span></td>
+            </tr>
+            <tr data-aos="fade-up" data-aos-delay="400">
+              <td>0156895</td>
+              <td>Haneef Arif</td>
+              <td>50</td>
+              <td>Cardiology</td>
+              <td>2025-10-12</td>
+              <td><span class="badge status-badge">Under Treatment</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!-- Services -->
+  <section id="services">
+    <div class="container py-5">
+    <h2 class="text-center mb-5 fw-bold" style="color: var(--text-primary);">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0 shadow-lg p-4">
+           <img src="assets/images/service1.jpg" class="card-img-top rounded-circle mx-auto mt-3" 
+                 style="width:150px; height:150px; object-fit:cover;" alt="Services">
+            <h5 class="card-title fw-bold">Cardiology</h5>
+            <p class="card-text text-muted">Comprehensive heart care with expert cardiologists and modern technology.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0 shadow-lg p-4">
+          <img src="assets/images/service2.jpg" class="card-img-top rounded-circle mx-auto mt-3" 
+                 style="width:150px; height:150px; object-fit:cover;" alt="Services">
+            <h5 class="card-title fw-bold">Neurology</h5>
+            <p class="card-text text-muted">Advanced treatment for neurological disorders and patient-centered care.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0 shadow-lg p-4">
+            <img src="assets/images/service3.jpg" class="card-img-top rounded-circle mx-auto mt-3" 
+                 style="width:150px; height:150px; object-fit:cover;" alt="Services">
+            <h5 class="card-title fw-bold">Orthopedic</h5>
+            <p class="card-text text-muted">Expert orthopedic services for bones, joints, and muscle injuries.</p>
+          </div>
+        </div>
+      </div>
+    </di>
+  </section>
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold" style="color: var(--text-primary);">Contact Us</h2>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-5">
+          <h5 class="fw-bolder mb-3" style="color:#063970;">Send Us a Message</h5>
+          <form id="contact-form">
+            <div class="row g-2 mb-3">
+              <div class="col">
+                <input type="text" class="form-control rounded-pill form-control-sm px-3 py-2" placeholder="First Name" required>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control rounded-pill form-control-sm px-3 py-2" placeholder="Last Name" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control rounded-pill form-control-sm px-3 py-2" placeholder="Email Address" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control rounded form-control-sm px-3 py-2" rows="4" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-50 rounded-pill py-2 mx-auto d-block">Submit</button>
+          </form>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="position-relative rounded overflow-hidden" style="height:100%;">
+            <iframe
+              src="https://www.google.com/maps?q=Lahore&output=embed"
+              style="width:100%; height:100%; border:0; min-height:400px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <div class="position-absolute p-3 bg-white bg-opacity-85" style="bottom:20px; left:20px; border-radius:10px;">
+              <h6 class="fw-bold mb-1">Our Location</h6>
+              <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>123 HealthCare St, Lahore</p>
+              <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+92 300 1234567</p>
+              <p class="mb-0"><i class="bi bi-envelope-fill me-2"></i>info@healthcare.com</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <a href="#" id="backToTop" class="btn btn-primary rounded-circle position-fixed" 
+     style="width:45px; height:45px; bottom:30px; right:30px; display:flex; justify-content:center; align-items:center; z-index:999; display:none;">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+  <!-- Footer -->
+  <footer class="text-light pt-5 pb-4" style="background-color: var(--secondary);">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-md-4 col-6">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-light text-decoration-none d-block mb-1">Home</a></li>
+            <li><a href="#doctors" class="text-light text-decoration-none d-block mb-1">Doctors</a></li>
+            <li><a href="#patients" class="text-light text-decoration-none d-block mb-1">Patients</a></li>
+            <li><a href="#services" class="text-light text-decoration-none d-block mb-1">Services</a></li>
+            <li><a href="#contact" class="text-light text-decoration-none d-block mb-1">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-6">
+          <h5 class="fw-bold mb-3">Contact Info</h5>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>HealthCare Street #34, Lahore</p>
+          <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+92 330 1234567</p>
+          <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>info@healthcare.com</p>
+          <p class="mb-0"><i class="bi bi-clock-fill me-2"></i>24/7 Emergency</p>
+        </div>
+        <div class="col-md-4 col-12">
+          <h5 class="fw-bold mb-3">Follow Us</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="bg-light my-4">
+      <div class=" justify-content-between align-items-center text-center ">
+        <p class="mb-2 mb-md-0">Health Center © 2025 by (MK). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
