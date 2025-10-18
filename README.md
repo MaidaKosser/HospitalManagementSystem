@@ -1,4 +1,4 @@
-# 🏥 HealthCenter Hospital Website
+# HealthCenter Hospital Website
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Description
+## Description
 **HealthCenter Hospital Website** is a responsive, modern frontend web application designed for a hospital or healthcare center.  
 It provides information about the hospital, doctors, departments, services, patients, and contact information. Users can **book appointments directly** through a modal form.
 
@@ -15,7 +15,7 @@ Built using **HTML**, **CSS**, and **Bootstrap 5**, with smooth animations, inte
 
 ---
 
-## ✨ Features
+## Features
 - Responsive design for desktop, tablet, and mobile.
 - Sticky navbar with dropdown menus for **Doctors** and **Departments**.
 - Banner section with welcome message & call-to-action button.
@@ -41,15 +41,27 @@ Built using **HTML**, **CSS**, and **Bootstrap 5**, with smooth animations, inte
 - **AOS (Animate On Scroll)** for smooth animations
 
 ---
+## How to Run the Project
 
-## 📁 Project Structure
-- HealthCenter/
-- │
-├─ index.html # Main website page
-├─ assets/
-│ ├─ css/
-│ │ └─ style.css # Custom styles
-│ ├─ js/
-│ │ └─ script.js # Custom JS
-│ └─ images/ # Doctor & service images
-├─ README.md # Project documentation
+Follow these simple steps to get the HealthCenter frontend running:
+
+- Clone the Repository
+```bash
+1. git clone https://github.com/your-username/HealthCenter.git
+```
+- Open directory
+```bash
+cd HealthCenter
+```
+- Open Index file on brwoser:
+
+  Option 1: Double-click the index.html file
+
+  Option 2: Right-click → Open With → Browser of choice
+
+---
+
+## Notes
+- Frontend crafted with passion and precision By MK.
+
+---
